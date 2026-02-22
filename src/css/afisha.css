@@ -1,0 +1,47 @@
+.movie-card img{
+  border-radius: 12px;
+}
+.movie-card{
+margin: 12px auto;
+width: 250px;
+  box-shadow: 0px 5px 5px -6px #000000, 5px 5px 5px 5px rgba(0,0,0,0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+.movie-card:hover,
+.movie-card:focus{
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 5px 5px rgba(0,0,0,0);
+}
+.js-load-more{
+  padding: 12px 24px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.js-load-more:hover,
+.js-load-more:focus{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+.js-load-more:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.load-more-hidden{
+  display: none;
+}
+
+@media (min-width: 1024px){
+  .js-movie-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
